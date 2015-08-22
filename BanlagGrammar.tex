@@ -1,0 +1,408 @@
+\documentclass[12pt]{report} 
+\usepackage[margin=0.75in]{geometry}
+\usepackage{tipa}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\begin{document}
+\title{Banlag's grammar}
+\author{Alane Suhr}
+\maketitle
+
+\chapter{Phonology}
+\section{Vowels}
+
+The vowel phonemes follow, alongside their orthological values. Banlag is, for the most part, 1:1 with character to phoneme. 
+\vspace{5mm}
+
+\begin{tabular}{l | c | c | c | c |}
+  & \textbf{Front} &  \textbf{Near-front} & \textbf{Central} & \textbf{Back}\\ \hline
+  \textbf{Close} & /i/ <i>& & & /u/ <u>\\\hline
+\textbf{Near-close} && /\textipa{I}/ <\^ i>& &\\\hline
+\textbf{Close-mid} & /e/ <e> & & & /o/ <o>\\\hline
+\textbf{Mid} & & & /\textipa{@}/ <\"e>&\\\hline
+\textbf{Open-mid} & /\textipa{E}/ <\^ e>& & & \\\hline
+\textbf{Open} & &  &/a/ <a>& /\textipa{A}/ <\^ a>\\\hline
+\end{tabular}
+
+\vspace{5mm}
+In addition, [y] and [\textipa{U}] may occur as allophones of /u/. [\textipa{O}] often occurs as an allophone of /o/. [\textipa{\ae}] rarely, but sometimes, occurs as an allophone of /a/ or /\textipa{E}/. 
+
+In some cases, vowel combinations occur. They rarely occur in base words, with a few exceptions (e.g. loanwords). However, they may occur in combinations of morphemes. This is especially apparent in the particles used for nouns, verbs, and modifiers. In some cases, these become diphthongs; in others, a sound change occurs (except in loanwords). In the cases that sound change occur, follow these rules:
+
+\begin{itemize}
+\item /ii/ $\to$ /\textipa{E}/ <\^ e>
+\item /eu/ $\to$ /\textipa{E}/ <\^ e>
+\item /ee/ $\to$ /\textipa{I}/ <\^ i>
+\item /eo/ $\to$ /\textipa{@}/ <\" e>
+\item /ao/ $\to$ /\textipa{A}/ <\^ a>
+\item /aa/ $\to$ /\textipa{ao}/ <ao>
+\item /\textipa{Aa}/ $\to$ /\textipa{@}/ <\" e>
+\end{itemize}
+
+Banlag does not distinguish stress in syllables as strictly as English does. Generally, stress is placed on the second to last syllable in a base word, and almost never placed on a particle except when by itself. For example:
+
+\begin{itemize}
+\item <kani> \textipa{["k\super ha.ni]} = dog
+\item <vile> \textipa{["vi.le]} = want
+\item <dau> \textipa{[dau]} = does
+\item <viledau> \textipa{["vi.le""dau]} = wants
+\item <kaniviledau> \textipa{["k\super ha.ni"vi.le""dau]} = wants dog
+\end{itemize}
+
+\section{Consonants}
+\begin{tabular}{l | c | c | c | c | c | c | c |}
+  & \textbf{Labial} &  \textbf{Labiodental} & \textbf{Alveolar} & \textbf{Postalveolar} & \textbf{Palatal} & \textbf{Velar} & \textbf{Glottal} \\ \hline
+\textbf{Plosive} & /p/ /b/& & /t/ /d/ & & & /k/ /g/ & \\ \hline
+ \textbf{Nasal} & /m/ & & /n/ & & & /\textipa{N}/ & \\ \hline
+\textbf{Trill, flap} & & & /r/ /\textipa{R}/& & & & \\ \hline
+\textbf{Fricative}& & /f/ /v/&/s/ /z/ & /\textipa{S}/ /\textipa{Z}/& & /x/& /h/ \\ \hline
+\textbf{Affricate}& & & &/\textipa{tS}/ /\textipa{dZ}/ & && \\ \hline
+\textbf{Approximant}& /w/ & & /l/& &/j/ & & \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+The unvoiced plosive have aspirated allophones, occurring at the initial point in a stressed syllable (e.g. /kani/ \textipa{["k\super ha.ni]}). Additionally, /t/ and /d/ have dental allophones which are present at the initial point in an unstressed syllable between two vowels (e.g. /bati/ \textipa{["ba.\|[ti]}). Lastly, [\textipa{\textltailn}] is an allophone /n/ in /nj/.
+
+Most consonants have the same orthographical value as their IPA symbol. However, the following use a different symbol:
+
+\vspace{5mm}
+
+\begin{tabular}{c | c |}
+\textbf{Phoneme} & \textbf{Symbol} \\ \hline
+\textipa{/N/} & <ng> \\ \hline
+/r/ & <rr> between vowels; <r> elsewhere \\ \hline
+\textipa{/R/} & <r> \\ \hline
+\textipa{/S/} & <\v s> \\ \hline
+\textipa{/Z/} & <\v z> \\ \hline
+/j/ & <y> \\ \hline
+/\textipa{tS}/ & <c> \\ \hline
+/\textipa{dZ}/ & <j> \\ \hline
+\end{tabular}
+
+\chapter{Nouns}
+\section{Pronouns}
+Pronouns decline for four qualities:
+\begin{itemize}
+\item Person
+\item Number
+\item Case
+\item Determination
+\end{itemize}
+
+The pronouns are separated into two individual particles, one for person and number, and another for case and determination. The first particle may be used separate from the second in certain cases -- affixed to a verb to mark subject/object, or to form complex pronouns.
+
+\subsection{Person}
+There are four persons in Banlag: first, second, third, and fourth. First refers to the speaker, second to the audience, and third to any third party not taking part in the conversation. Fourth is described below.
+
+First person is rarely used in any number except for singular and zero. It is only used in other numbers when \textit{literally} more than one person is talking -- an example would be when a group of people are chanting, or several people are giving a presentation. 
+
+To form what English considers the first person plural pronoun	`we', Banlag makes a distinction between who besides the speaker is involved (a distinction between the inclusive and exclusive `we'). In order to form, for example, an inclusive `we' (the speaker and a member of the audience), one would simply combine the two first particles of both pronouns with the second particle. In this case, if `we' is being used as a subject in a sentence, we could say \textbf{mial nial}. However, we could shorten it and say \textbf{minial}, combining the \textbf{mi} and \textbf{ni} of the pronouns with the \textbf{al}. 
+
+This is called a complex pronoun. There is no rule to the order of the particles in the complex pronouns -- \textbf{minial} has the same meaning as \textbf{nimial}. However, polite speech usually involves putting references to the second and third person before that of the first person. Many other complex pronouns can be formed. There is a distinction, for example, between `you' containing just an audience (e.g. \textbf{neal}) and `you' containing an audience and a third party (e.g. \textbf{neteal}).
+
+Fourth person is similar to the English use of the word `one', but it has more uses. It is used when the person doesn't matter, as in the English word `one'. It is also used in the interrogative pronoun `who' or `what'. 
+
+\subsection{Number}
+There are six numbers in Banlag. These are:
+
+\begin{itemize}
+\item \textbf{Zero:} an example of its use would be \textbf{M\"el pinedunt\^e!}, `I didn't drink it!'. The verb itself is actually positive, because in this context, `it' was drunk, but the speaker did not perform the drinking, so it becomes negative. Banlag has a fairly complicated way of forming negatives, described later.
+\item \textbf{Singular}
+\item \textbf{Plural -- few:} this is used to mark things of which there are enough to count. This depends on context, but usually ranges from 2 to 10 objects. For uncountable things, such as liquids or masses, it is used to emphasize a small amount -- \textbf{tetviledaumi}, `I want a little (e.g. water)'. 
+\item \textbf{Plural -- many:} this is used to mark things of which there are too many to count. For uncountable things, this is used to emphasize a large amount -- like our example above, \textbf{tutviledaumi}, `I want a lot (e.g. water)'.
+\item \textbf{Indefinite:} this is used when the number doesn't matter or is an abstract concept. It is sometimes used for personal pronouns (I, you, it) to increase the respect for that pronoun (the formal way of saying `you' uses the particle \textbf{na-}).
+\item \textbf{Interrogative:} contrary to what one might think, this isn't strictly used to ask for amounts (e.g. ``how much'' or ``how many'' in English). It is used to form interrogative pronouns, like `what' or `who'. Because the use of these pronouns by nature doesn't assume a person or number, the number shouldn't be specified, and the interrogative number is used. For example, \textbf{\v Saol pinedint\^e?}, `who drank it?'. 
+\end{itemize}
+
+\subsection{Case}
+There are six cases in Banlag. 
+
+\begin{itemize}
+\item \textbf{Nominative:} used when the noun is the subject.
+\item \textbf{Accusative:} used when the noun is the direct object.
+\item \textbf{Reflexive:} used when the noun is both the subject and direct object.
+\item \textbf{Vocative:} used when calling out to the noun; e.g. \textbf{Nels!} `You guys!'. 
+\item \textbf{Subjective:} used when the noun is a title or label. 
+\item \textbf{No case:} used when the noun is affixed with something else; e.g. \textbf{milkengsir}, `with me' (where `mil' is `me').
+\end{itemize}
+
+\subsection{Determination}
+Determination, also called quantification, is similar to English's use of `the', `this', `that', `all', etc. There are several of these:
+
+\begin{itemize}
+\item \textbf{Definite:} corresponds to English's `the', used when referring to something known to both the speaker and audience.
+\item \textbf{This:} corresponds to English's `this', used to refer to something in the conversation.
+\item \textbf{That (proximal):} corresponds to English's `that', and is used to refer to something outside of the conversation, but usually nearby (in viewing distance).
+\item \textbf{That (distal):} corresponds to English's `that', and is used to refer to something out of the conversation, but out of reach, or an abstract concept.
+\item \textbf{Indefinite:} corresponds loosely to English's `a' or `an'. Refers to something known to the speaker, but not the audience.
+\item \textbf{Existential:} corresponds to set theory's `there exists' or English's `some'. Refers to something, which specifically isn't known to the speaker or audience, but which may exist. \textbf{\v Siat pinedult\^ e!}, `Something drank it!'. It is usually used with a fourth person. 
+\item \textbf{Universal:} corresponds to set theory's `for all'. Refers to everything in a given class. \textbf{Nuar in\v zinerd\^e.} `You're all engineers.'. It is usually used with an indefinite number.
+\item \textbf{Grouping:} this concept groups all individuals in a given class together, to refer to it as a whole. \textbf{Taod hasinviled\^ e}, `Everything wants happiness'. It is usually used with a third person and indefinite number.
+\end{itemize}
+
+\subsection{Declension tables}
+Below is the table describing declension for the first particle in a pronoun (person and number). Recall that these can be used separately from the second particle when forming complex pronouns and when forming verb phrases. 
+\vspace{5mm}
+
+\begin{tabular}{l | c | c | c | c |}
+  & \textbf{Speaker} &  \textbf{Audience} & \textbf{3rd party} & \textbf{Indefinite}\\ \hline
+\textbf{Zero} & m\^ a- & n\^ a- & t\^ a & \v s\^ a-\\\hline
+\textbf{One} & mi- & ni- &  ti- & \v si-\\\hline
+\textbf{Few} & me- & ne- & te- & \v se-\\\hline
+\textbf{Many} & mu-&nu-&tu- & \v su-\\\hline
+\textbf{Indefinite} & ma- & na- & ta- & \v sa-\\\hline
+\textbf{Interrogative} & mo- & no- & to- & \v so-\\\hline
+\end{tabular}
+
+\vspace{5mm}
+
+Below is the table describing the declension for the second particle in a pronoun (case and determination). These rarely exist by themselves. 
+
+\vspace{5mm}
+
+\begin{tabular}{l | c | c | c | c | c | c |}
+  & \textbf{Nominative} &  \textbf{Accusative} & \textbf{Reflexive} & \textbf{Vocative} & \textbf{Subjective} & \textbf{No case} \\
+\textbf{Definite} & -al& -il & -el & -ls & -ln & -l\\
+\textbf{This} &-as&  -is & -es & -z & -ns &  -s \\
+\textbf{That (proximal)}  & -ak & -ik & -ek&-ks & -nk & -k \\
+\textbf{That (distal)} & -am& -im  & -em& -ms& -mn & -m \\
+\textbf{Indefinite} & -an& -in & -en& -ns& -nn& -n\\
+\textbf{Existential} & -at&  -ib & -et& -ts & -nt &-t\\
+\textbf{Universal} & -ar & -ir & -er& -rs& -rn& -r\\
+\textbf{Grouping} & -ad& -id & -ed & -ds& -nd & -d\\
+\end{tabular}
+\vspace{5mm}
+
+Recall the vowel sound changes presented in section 1.1. For example, the third person indefinite-number definite nominative pronoun seems like it should be \textbf{*taal}, but is realized as \textbf{taol}.
+
+\subsection{Examples}
+The following are some randomly-generated pronouns (as there are over a thousand possible combinations) so you have some context in how pronouns are constructed:
+
+\begin{itemize}
+\item \textbf{\v sunt \tiny{4 M S E}:} \v sunt gadisir; `some red things'.
+\item \textbf{man\^as \tiny{1 Ind 2 Z NC This}:} man\^ assisir; 	`mine but not yours', with special emphasis on the speaker's importance and a particular speaker/audience (as opposed to a different one, which is why the `this' determination is used).
+\item \textbf{noel \tiny{2 Int R D}:} noel dil?; `did you do it?', used when whatever `it' is was done, but the speaker isn't sure if the person being asked was the one to do it.
+\item \textbf{mut\^aners \tiny{1 M 3 Z 2 F V U}:} mut\^aners! `everyone!' in a situation in which many people are speaking, there are a few in the audience, and the speakers want to exclude other people not in the audience.
+\item \textbf{t\" ek \tiny{3 Z N TP}:} t\" ek dul, `that didn't do it', when whatever `it' is was done.
+\end{itemize}
+
+\section{Nouns}
+Basic nouns are constructed in a very simple way: append whatever pronoun describes the noun to the base noun. 
+
+This is fairly self-explanatory. Some simple examples follow:
+
+\begin{itemize}
+\item \textbf{Kaniteal pinedau} (kani+teal),`the dogs are drinking'
+\item \textbf{Palartiln in\v zinerd\^ eransir} (palar+tiln), `the engineering talk'
+\item \textbf{Pesannuls!} (pesan + nuls), `people!' (as in to get someone's attention)
+\end{itemize}
+
+\textit{Any} pronoun can be appended \textit{any} noun. This allows you to describe any noun as first or second person:
+
+\begin{itemize}
+\item \textbf{Kaniniln!} (kani + niln), `you dog!'
+\item \textbf{D\^ al\^ almial don} (d\^ al\^ al + mial), `dumb me didn't do it'
+\end{itemize}
+
+\section{Proper nouns}
+Proper nouns, such as names or places, do not necessarily need to be declined. They are declined when used in conjunctions by the nature of conjunctions. It is optional anywhere else, but may be added for clarity.
+
+\chapter{Modifiers}
+Modifiers are a part of speech which give quality to nouns, verbs, and other modifiers. They are essentially the same as adjectives and adverbs in English.
+
+\section{Features}
+Modifiers decline for two features: positivity and what they describe. 
+
+Modifiers can be positive, negative, or neutral. For example, \textbf{hasinsin} means `happy', whereas \textbf{hasinsan} means `unhappy'. \textbf{Hasinson}, the neutral form, may either be used in other phrases (\textbf{hasinsontand}, `happiness') or by itself; `son' can be used as an interrogative `how', literally, `like what?'. 
+
+Modifiers also decline for what they describe, either a noun, verb, or other modifier. For example, \textbf{pesantiln hasinsin} means `the happy person'. \textbf{Pasitidaumi hasinsir} means `I happily go'. \textbf{Kanitiln d\^al\^alsin hasinsit} means `the happily dull dog'.
+
+The following table describes the declensions for modifiers. To create a modifier, one appends it to a base word.
+
+\vspace{5mm}
+\begin{tabular}{l | c | c | c |}
+  & \textbf{Positive} &  \textbf{Negative} & \textbf{Indefinite}\\ \hline
+\textbf{Noun} & -sin &-san&-son\\ \hline
+\textbf{Verb} & -sir&-sar &-sor\\ \hline
+\textbf{Modifier} &-sit &-sat &-sot\\ \hline
+\end{tabular}
+\vspace{5mm}
+
+Modifiers may sometimes be used by themselves. This is most often in interrogative `how' clauses; for example, \textbf{sor dunni?}, `how did you do it?'. However, they may also be used by themselves when they have already been defined by previous context (as with most pronouns). For example, \textbf{Kanitial banasin dun; tial sin pinedun.} could be translated as `The brown dog dit it, the one like that drank', where \textbf{tial} translates as `the one', and \textbf{sin} translates as `like that', referring to the quality previously defined as \textbf{bana}, or `brown'.
+
+\section{Emphatic modifiers}
+In some cases, what describes a noun is more important than the noun itself. How do you think this would be translated: `Have a nice day!'?
+
+Because it's implied that someone will `have a day' no matter what, the important part of this phrase is `nice' -- the speaker wants to emphasize that the day is nice, not that the audience has any sort of day. `Nice' is used emphatically. In contrast, `I had a nice day' doesn't (necessarily) emphasize the niceness of the day (actually, in Banlag, this would most likely be translated as `my day was nice', making the point moot).
+
+When a modifier is emphasized, simply decline it as a noun (in addition to a modifier -- so, affix the appropriate noun particle) and have it replace whatever it modifies. Then remove the case on whatever it was modifying in the first place (this might look strange, since nouns almost always have a case unless they are affixed with another type of particle).
+
+`Have a nice day' is can be translated as \textbf{Tsitadaumin\^e gudsintial dintil}, or more literally, `I wish goodness (on your) day'. An interesting function of emphatic modifiers is that it's easier to remove them from context. `Have a nice evening' can be translated as \textbf{Tsitadaumin\^e gudsintial vad\v sertil}, the only difference being that \textbf{din}, `day', is replaced with \textbf{vad\v ser}, `evening'. Because of this, a common greeting said at any time of day is \textbf{gudsintial}, because most time-based greetings use that exact phrase, and it's that part that's emphasized the most.
+
+\section{Serial modifiers}
+Serial modifiers are those which cannot exist alone, i.e., without another argument. This concept is similar to English prepositions, such as `in', `of', etc. Most of these English prepositions map to serial modifiers. Serial modifiers are similar to a case system in some languages, when they take a noun as an argument. This concept is also fairly similar to Hungarian. For example, instead of the genitive case, Banlag may use the serial modifier \textbf{si}, which indicates permanent possession. 
+
+The formation of a serial modifier is simple: prepend the modifier with its argument. Using the genitive case as an example, if I wanted to say `my house', I would say \textbf{kazatil misisin}, with the second word meaning `my': \textbf{mi + si + sin} or loosely, `me + of + like'.
+
+There is a fairly closed set of serial modifiers, as there is a closed set of prepositions in English. However, there is more variety of modifiers than in English. For example, there are two genitive modifiers: \textbf{si} and \textbf{ti}. The first refers to a more permanent ownership, while the second refers to a more temporary one, usually to distinguish it from being someone else's. 
+
+Serial modifiers also encompass a few words and phrases English would consider as transitional phrases. For example, 
+
+\chapter{Verbs}
+\section{Copula}
+The copula is technically the only verb in Banlag. It roughly translates into `to be' or `to do'. To introduce the copula, think of yes or no questions. Responses are likely to be something of the form `is' or `does', or `isn't' or `doesn't'.
+
+Imagine you run into someone you recognize but don't quite remember. They ask you, `Are you <your name>?', and you respond, `I am.' You then ask them, `Are you <another name>'?, but they respond, `I'm not.'
+
+In Banlag, the responses to these questions would almost solely use the copula. A conversation would could like this:
+
+\textbf{\textit{Bob}: Nial Alane k\^er?} \textit{You're Alane, right?}
+
+\textbf{\textit{Alane}: D\^ er.} \textit{I am.}
+
+\textbf{\textit{Bob}: Pamadakim\^e?} \textit{Do you remember me?}
+
+\textbf{\textit{Alane}: Du!} \textit{I do!}
+
+\textbf{\textit{Bob}: Kaff\^etetvileki?} \textit{Do you want some coffee?}
+
+\textbf{\textit{Alane} Do, tadamnils.} \textit{I don't, thanks.}
+
+In order to say anything in Banlag, one needs to grasp the concept of the copula very well. Examples of its use and declensions will refer yes or no questions for clarity. 
+
+There are four features that the copula declines for. 
+
+\subsection{Mood}
+
+There are six moods in Banlag:
+
+\begin{itemize}
+\item \textbf{Indicative:} a realis mood, this indicates that something happened, is happening, or will happen.
+\item \textbf{Subjunctive:} an irrealis mood, this is used when the action is supposed. For example, we have in English, `If I were ... then I would ...'. In this case, `were' is in the subjunctive case. A short example in Banlag is this: \textbf{sudaksir ru.} `If it were, it would'. Note that this might sound confusing, but this is only because it lacks context. Given context, this is a perfectly grammatical thing to say in Banlag (and, might be in English as well!).
+\item \textbf{Conditional:} on the other side of the subjunctive is the conditional. This is used when describing the result of a supposition. In the Banlag example right above, \textbf{ru} translates into `would', the conditional form of the copula. This is used not only when a supposition is explicitly made using `if'.
+\item \textbf{Imperative:} this is used to tell another person what to do.
+\item \textbf{Potential:} this is a realis mood, used to indicate things which will probably (or probably not) occur, but not necessarily. `Will it rain today?' could be answered with \textbf{blus}, `it might'.
+\item \textbf{Interrogative:} this is used to ask questions. In the dialogue above, the particle \textbf{k\^ er} literally means, `you are, right?'. One might think that interrogative and conditional moods aren't mutually exclusive, but in Banlag, they are -- to ask a question, `would you ... if ...?', one would use the interrogative particle in the first part of the question, because it is just as irrealis as the conditional.
+\end{itemize}
+
+\subsection{Aspect}
+There are four aspects in Banlag:
+
+\begin{itemize}
+\item \textbf{Perfective:} this is used for actions which happen at once. For example, if someone is yelling at another to stop, they could say, \textbf{pu!}, `do it!'
+\item \textbf{Habitual:} habitual is used to indicate actions which happen frequently. For example, if someone asked you if you played piano as a child, you could respond, \textbf{tol}, `I didn't.' This is also used for habitual things over a short amount of time, not just a longer time like one's childhood. For example, someone might ask if it rained today, and you could respond, \textbf{tun}, `it did', with the context that it happened many times.
+\item \textbf{Progressive:} this is used when an action is taking place over a period of time. It may be interrupted by another verb in the perfective aspect. If someone asks you if you're eating dinner, you could respond \textbf{dau}, `I am.'.
+\item \textbf{Stative:} this is used for actions which are states, either temporarily or permanently. In the example above, when Bob was asking Alane who she was, her response, \textbf{d\^er}, is in the stative aspect.
+\end{itemize}
+
+\subsection{Tense}
+This indicates when an action occurs or will occur. There are four basic tenses, some with variation.
+
+\begin{itemize}
+\item \textbf{Present:} this is used for things which are presently true, but were not necessarily true before, or may not be true later.
+\item \textbf{Past}
+\item \textbf{Future}
+\item \textbf{No or all time:} this is used for actions for which time doesn't matter (e.g. could be used in the sentence `I like washing my dog' in `washing', or for things which occur for all reasonable points in time in context. For example, \textbf{Sedankirni?}, loosely `Do you have siblings?' (literally, `Are you a sibling?'), can be answered with \textbf{d\^er}, `I am.'
+\end{itemize}
+
+Additionally, the past and future tense have variations in just how far away they are from the now. Both have `recent' and `historic' versions. These do not have a specific amount of time which constitutes whether to use recent or normal version. 
+
+Like plurality, it more depends on context. One could respond to another person's command with \textbf{dus!}, `I will right now!' (this uses the recent-future tense). Additionally, \textbf{d\^es} (also using the recent-future tense) could be used if someone asked, for example, \textbf{Studank\^eni?}, `Are you a student', to indicate that the person isn't yet a student, but will be sometime soon. These variation are used to emphasize the nearness or farness of a certain event happening in time.
+
+\subsection{Positivity}
+Few languages decline their verbs for their positivity. In many languages, a special particle is used (\textit{no}, \textit{nicht}, 没). English has an even more complicated way of forming negatives, adding the phrase \textit{does not}. In Banlag, the copula declines its positivity in the particle itself.
+
+\begin{itemize}
+\item \textbf{Positive:} used to indicate that something happened. Also used in questions when assuming or guessing that the answer will be positive.
+\item \textbf{Negative:} used to indicate that something did not happen. Also used in questions when assuming or guessing that the answer will be negative.
+\item \textbf{Indefinite:} used when the verb is used as a general concept, and when asking true yes or no questions where the speaker isn't guessing anything.
+\end{itemize}
+
+It is important to note that verbs in Banlag are ground truth. There is a significant difference between the following:
+
+\begin{itemize}
+\item \textbf{M\"el dun t\^el sir.} The subject is negative.
+\item \textbf{Mial don t\^el sir.} The verb is negative.
+\item \textbf{Mial dun t\^ail sir.} The object is negative.
+\item \textbf{Mial dun t\^el sor.} The modifier is negative.
+\end{itemize}
+
+In English, each of these would be translated as `I didn't do it like that.' However, these have huge differences in Banlag:
+
+\begin{itemize}
+\item In the first, whatever happened actually happened. For example, maybe somebody drew a picture. Another person was complimented on the picture and its specific style (which the modifier indicated), but hadn't drawn it. Their response would be, `\textit{I} didn't do it like that!'.
+\item In the second, whatever supposedly happen did not actually happen. For example, a teacher suggested the students write an essay for extra credit (`for extra credit' being a modifier for the verb). A particular student who ended up not writing the essay could say `I didn't \textit{do} it like that'.
+\item In the third, only the object is wrong. For example, if someone asked you if you read Book A, but you actually read Book B, your response could be, `I didn't read \textit{that book}'.
+\item In the last, the adverb is negative. For example, you clarify that you didn't run the race that quickly by saying, `I didn't run it \textit{quickly}'.
+\end{itemize}
+
+`Ground truth' means that when separated from the rest of the sentence, the verb should still be true. In the above examples, this is the case. However, in English, it wouldn't necessarily be the case. Because of this, negative verbs are relatively rare compared to how often they are used in other languages.
+
+\section{Declension tables}
+Below is a table describing declension for the first part of the copula, mood and aspect.
+
+\vspace{5mm}
+\begin{tabular}{l | l | l | l | l}
+  & \textbf{Perfective} &  \textbf{Habitual} & \textbf{Progressive} & \textbf{Stative}\\
+Indicative & d- & t-& da-& de-  \\
+Subjunctive  & s- &  sl- & sa- & se-  \\
+Conditional &  r-& l- & ra- & re- \\
+Imperative  & p- &  pl-& pa-& pe-  \\
+Potential  & b-& bl-& ba- & be- \\
+Interrogative & k- &  kl- & ka-&  ke-\\
+\end{tabular}
+
+\vspace{5mm}
+Below is a table describing declension for the second part of the copula, tense and positivity.
+\vspace{5mm}
+
+\begin{tabular}{l | l | l | l | l}
+  & \textbf{Positive} &  \textbf{Negative} & \textbf{Indefinite} \\
+Present & -u & -o& -i\\
+Past - historic & ul&-ol&-il \\
+Past - normal &-un& -on& -in\\
+Past - near &-um&  -om&-ms\\
+Future - far &  -uv&  -ov& -iv\\
+Future - normal &-ut&  -ot&-it\\
+Future - near &  -us & -os& -is\\
+(No time)  & -ur & -or & -ir\\
+\end{tabular}
+
+\vspace{5mm}
+Recall the vowel sound changes for certain combinations. For example, \textbf{de + u} is not \textbf{*deu}, but rather \textbf{d\^e}.
+
+\section{Serial verbs}
+Like serial modifiers, serial verbs cannot exist alone without an argument. The copula itself is a serial verb -- for example, if you wanted to say `it is purple', you can say \textbf{purrard\^er}, \textbf{purrar} + \textbf{d\^er}. There is a limited set of serial verbs, and they are usually associated with very basic concepts that require an argument of some sort. For example:
+
+\begin{itemize}
+\item \textbf{pasiti} -- to go to, to attend, to move towards. The argument is the location towards which the subject is moving.
+\item \textbf{pune} -- to be able to, can. The argument is the action which the subject can perform.
+\item \textbf{tev} -- to have (temporarily). This is analogous to the serial modifier \textbf{ti}. 
+\item \textbf{vile} -- to want.
+\end{itemize}
+
+The arguments of serial verbs are prepended to the verb. For example, \textbf{kaff\^evile} translates into `to coffee-want', or `to want coffee'. 
+
+Additionally, because there is a limited set of serial verbs, modifiers can be used to clarify. For example, \textbf{wakat} translates to `traveling by walking'. Its noun form translates to `a walk to a particular place', its verb form translates to `to walk to', and its modifier form translates to `by walking'. The sentence `I walk to my house' could be translated as \textbf{Mial wakatt\^e kazat\^el}, `I walk-to house'. It could also be translated as \textbf{Mial kazapasitit\^e wakatsir}, `I house-go walking', or even just \textbf{Mial kazapasitit\^e}, `I house-go'. 
+
+\section{Examples}
+There are over 500 possible combinations of verb declensions, so I will present some examples to show how they are constructed.
+
+\begin{itemize}
+\item \textbf{lir \tiny{H C I NT}:} relir; `would often do it again'. This is in the indefinite tense, meaning it would likely be used as a particle in another word.
+\item \textbf{p\"ev \tiny{S IM N FF}:} pirterp\"ev; `don't be like that (in the far future)'. Because this is in the stative mood, this has more of a connotation of one's personality rather than a specific behavior.
+\item \textbf{bais \tiny{PR P I FN}:} kadingbais; `he/she might be glad soon'.
+\item \textbf{r\^em \tiny{S C P PN}:} ratir\^em; `it would have just been fast'.
+\end{itemize}
+
+\section{Verbs}
+As with nouns, verbs are formed by simply appending he correct form of the copula onto a base which may be used as a verb. Not all bases can be used as verbs. In most cases, when a base makes the most sense as a noun or verb, the copula simply means ``to be''. For example, \textbf{kanid\^e} means `to be a dog'. 
+
+\chapter{Morphology}
+Each particle in Banlag may exist by itself. An integral part of Banlag is that any sentence should be able to be repeated stripped of all `content' words -- base words. For example, the sentence \textbf{Kohin-sin gud-sir monoser-d\^e n\^el!} (showing the base words separated from their particles), `Pleased to meet you!' can be responded to using the phrase \textbf{Sin sir d\^e n\^el!}, which means exactly the same thing to both speakers in context. In reality, this is a very vague utterance, roughly translating to `Like this I am, like that it's done to you!' (the real translation of the phrase is `Pleased (I am), I met you well').
+
+Obviously, saying any sentence without the base words will usually not make sense because there is no real meaning. In some cases, however, phrases are reduced to their particles and usually speakers can pick up on the meaning without any introduction of content words. An example is \textbf{Daumin\^e sintial til}, a common greeting, based on the phrase in section 3.2, \textbf{Tsitadaumin\^e gudsintial dintil}, `I wish you a good day'.
+
+\end{document}
